@@ -7,7 +7,7 @@ export interface IshopState{
 }
 
 
-const initialState = {
+const initialState:IshopState = {
   shopItems: [],
 };
 

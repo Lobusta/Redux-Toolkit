@@ -1,4 +1,4 @@
-import { call, takeEvery, put } from "redux-saga/effects";
+import { call, put } from "redux-saga/effects";
 import { getShop } from "./shopSlice";
 
 
@@ -16,6 +16,3 @@ export function* fetchDataSaga():any {
   }
 }
 
-export default function* rootSaga() {
-  yield takeEvery("FETCH_DATA_SAGA", fetchDataSaga);
-}

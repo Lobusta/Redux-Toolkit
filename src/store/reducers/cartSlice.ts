@@ -3,13 +3,11 @@ import { createSlice } from '@reduxjs/toolkit';
 
 export interface IcartState{
     cartItems: String[],
-    quantity: number
 }
 
 
-const initialState = {
+export const initialState = {
   cartItems: [],
-  quantity: 0
 };
 
 
@@ -24,7 +22,6 @@ const cartSlice = createSlice({
           );
         
           if (existingCartItem) {
-            console.log("in the existing cart");
             
             state.cartItems = state.cartItems.map((cartItem:any) =>
               cartItem.id === payload.id
